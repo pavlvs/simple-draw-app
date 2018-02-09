@@ -6,17 +6,43 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Mutata me</title>
+        <title>Simple Drawin App</title>
     </head>
 
     <body>
-        <h1>Nil Desperandum, Pavle</h1>
+        <canvas width="600" height="400"></canvas>
+        <div class="controls">
+            <ul>
+                <li class="red selected"></li>
+                <li class="blue"></li>
+                <li class="yellow"></li>
+            </ul>
+            <button id="revealColorSelect">New Color</button>
+            <div id="colorSelect">
+                <span id="newColor"></span>
+                <div class="sliders">
+                    <p>
+                        <label for="red"></label>
+                        <input type="range" name="red" min="0" max="255" value="0" id="red">
+                    </p>
 
+                    <p>
+                        <label for="green"></label>
+                        <input type="range" name="green" min="0" max="255" value="0" id="green">
+                    </p>
+                    <p>
+                        <label for="blue"></label>
+                        <input type="range" name="blue" min="0" max="255" value="0" id="blue">
+                    </p>
+                </div>
+                <div>
+                    <button id="addNewColor"></button>
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		<script src="js/app.js"></script>
-		
     </body>
-	
 </html>
